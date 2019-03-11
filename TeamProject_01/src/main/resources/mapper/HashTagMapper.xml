@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 게시판 처리 SQL -->
+<mapper namespace="com.com.Project.DAO.HashTagMapper">
+
+	<insert id="insertHashTag" parameterType="HashTag">
+		insert into HASHTAG(
+    		snsSeq
+    	<if test="#{firstTag!=null}">
+    		,firstTag
+    	</if>	
+    	<if test="#{secondTag!=null}">
+    		,secondtag
+    	</if>	
+    	<if test="#{thirdTag!=null}">
+    		,thirdtag
+    	</if>	
+    	)VALUES(
+			(select max(snsSeq) from Sns)
+		<if test="#{firstTag!=null}">
+    		,#{firstTag}
+    	</if>	
+    	<if test="#{secondTag!=null}">
+    		,#{secondTag}
+    	</if>	
+    	<if test="#{thirdTag!=null}">
+    		,#{thirdTag}
+    	</if>	
+		)
+		
+	</insert>
+	<select id="selectHashTag" parameterType="int" resultType="HashTag">
+		select 
+			*
+		from
+			HASHTAG
+		WHERE
+			SNSSEQ = #{snsSeq}
+	</select>
+</mapper>

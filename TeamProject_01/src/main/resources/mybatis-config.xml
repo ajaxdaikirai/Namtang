@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+<!-- 		<typeAlias type="vo 경로" alias="줄임말" /> -->
+		<typeAlias type="com.com.Project.VO.Users" alias="Users"></typeAlias>
+		<typeAlias type="com.com.Project.VO.Sns" alias="Sns"></typeAlias>
+		<typeAlias type="com.com.Project.VO.SnsImgSave" alias="SnsImgSave"></typeAlias>
+		<typeAlias type="com.com.Project.VO.HashTag" alias="HashTag"></typeAlias>
+	</typeAliases>
+	<mappers>
+<!-- 		<mapper resource="맵퍼xml 경로" /> -->
+		<mapper resource ="mapper/UsersMapper.xml"></mapper>
+		<mapper resource ="mapper/SnsMapper.xml"></mapper>
+		<mapper resource ="mapper/SnsImgSaveMapper.xml"></mapper>
+		<mapper resource ="mapper/HashTagMapper.xml"></mapper>
+	</mappers>
+</configuration>
