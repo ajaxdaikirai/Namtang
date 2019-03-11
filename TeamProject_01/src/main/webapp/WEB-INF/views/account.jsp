@@ -39,31 +39,7 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-	<script>
-	$(function(){
-		$("#login").on("click",function(){
-			var userId = $("#userId").val();
-			var userPw = $("#userPw").val();
-			$.ajax({
-				url:"login",
-				data:{userId:userId,userPw:userPw},
-				type:"post",
-				success : function(data){
-					alert(data);					
-				}
-			});
-			
-		});
-		$("#logout").on("click",function(){
-			$.ajax({
-				url:"logout",
-				type:"get"
-			});
-		});
-		
-	});
-	
-	</script>
+
   </head>
   <body>
   
@@ -372,12 +348,12 @@
               <div class="col-md-6">
                 <div class="aa-myaccount-login">
                 <h4>Login</h4>
-                 <form action="login" class="aa-login-form">
+                 <form action="" class="aa-login-form">
                   <label for="">Username or Email address<span>*</span></label>
-                   <input type="text" placeholder="Username or email" id="userId" name="userId">
+                   <input type="text" placeholder="Username or email">
                    <label for="">Password<span>*</span></label>
-                    <input type="password" placeholder="Password" id="userPw" name="userPw" >
-                    <button type="submit" class="aa-browse-btn" id="login">Login</button>
+                    <input type="password" placeholder="Password">
+                    <button type="submit" class="aa-browse-btn">Login</button>
                     <label class="rememberme" for="rememberme"><input type="checkbox" id="rememberme"> Remember me </label>
                     <p class="aa-lost-password"><a href="#">Lost your password?</a></p>
                   </form>

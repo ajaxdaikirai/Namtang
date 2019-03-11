@@ -33,8 +33,9 @@ public class HomeController {
 		
 		model.addAttribute("serverTime", formattedDate );
 		
-		return "home";
+		return "testHome";
 	}
+	
 	@RequestMapping(value = "/test404", method = RequestMethod.GET)
 	public String test404() {
 		return "404";
@@ -78,7 +79,7 @@ public class HomeController {
 	
 	@RequestMapping(value = "/index", method = RequestMethod.GET)
 	public String index() {
-		return "index";
+		return "index2";
 	}
 	
 	@RequestMapping(value = "/product-detail", method = RequestMethod.GET)
@@ -98,6 +99,11 @@ public class HomeController {
 	
 	@RequestMapping(value = "/wishlist", method = RequestMethod.GET)
 	public String wishlist() {
-		return "wishlist";
+		return "wishlist"; 
+	}
+	
+	@RequestMapping(value = "/SNSPage", method = RequestMethod.GET)
+	public String SNSPage() {
+		return "SNSPage"; 
 	}
 }
