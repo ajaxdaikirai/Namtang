@@ -95,7 +95,7 @@
 </head>	
 <body>
 	
-	<form name="fileForm" action="writeSns" method="post" enctype="multipart/form-data">
+	<form name="fileForm" action="writeSns" method = "post" enctype="multipart/form-data">
 		<input type="hidden" name="userSeq" id="userSeq" value="${sessionScope.userSeq}">
 		<input type="text" name="snsContent" id="snsContent">
        <div class="input_wrap">
@@ -116,8 +116,10 @@
     
     <div>
     
-    sdasdsa
-    sinmingu test
+    qwe
+    asd
+    zxc
+    
     </div>
 </body>
 </html>
