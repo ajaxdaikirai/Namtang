@@ -76,6 +76,21 @@
 			$(img_id).remove();
 			console.log(sel_files);
 		}
+		
+		function init() {
+			
+			$.ajax({
+				
+				url:"viewSns", // controller의 action 부분
+				data:{}, // 데이터없음
+				type:"get", // method는 get
+				success:function(result){ // 성공시 listReviewe action의 리턴값을 받아옴 
+					output(result); // output 함수 실행
+				}
+				
+			});
+			
+		}
 	</script>
 </head>	
 <body>
@@ -98,5 +113,11 @@
 		<input type="text" id="thirdTag" name="thirdTag">
         <input type="submit" value="전송" />
     </form>
+    
+    <div>
+    
+    sdasdsa
+    sinmingu test
+    </div>
 </body>
 </html>
