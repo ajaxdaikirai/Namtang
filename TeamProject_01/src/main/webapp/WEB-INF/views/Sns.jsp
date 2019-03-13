@@ -116,10 +116,14 @@
     
     <div>
     
+<<<<<<< HEAD
     qwe
     asd
     zxc
     
+=======
+   	sinmingu
+>>>>>>> refs/remotes/origin/sinmingu
     </div>
 </body>
 </html>

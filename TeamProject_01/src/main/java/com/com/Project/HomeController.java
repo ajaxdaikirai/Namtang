@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 /**
  * Handles requests for the application home page.
  */
+
 @Controller
 public class HomeController {
 	
@@ -22,8 +23,10 @@ public class HomeController {
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
+	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
+		
 		logger.info("Welcome home! The client locale is {}.", locale);
 		
 		Date date = new Date();
@@ -34,26 +37,35 @@ public class HomeController {
 		model.addAttribute("serverTime", formattedDate );
 		
 		return "testHome";
+		
 	}
 	
 	@RequestMapping(value = "/test404", method = RequestMethod.GET)
 	public String test404() {
+		
 		return "404";
+	
 	}
 	
 	@RequestMapping(value = "/account", method = RequestMethod.GET)
 	public String account() {
+		
 		return "account";
+	
 	}
 	
 	@RequestMapping(value = "/blog-archive-2", method = RequestMethod.GET)
 	public String blogArchive2() {
+		
 		return "blog-archive-2";
+	
 	}
 	
 	@RequestMapping(value = "/blog-archive", method = RequestMethod.GET)
 	public String blogArchive() {
+		
 		return "blog-archive";
+	
 	}
 	
 	@RequestMapping(value = "/blog-single", method = RequestMethod.GET)

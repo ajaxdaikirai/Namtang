@@ -42,7 +42,9 @@
 	});
 	
 </script>
+
 <body>
+
 	<c:if test="${sessionScope.loginId==null}">
 	<form id="loginForm" action="login" method="post">
 	<input type="text" name="userId" id="userId">
@@ -58,5 +60,7 @@
 	<button onclick="javascript:go()">goSns</button>
 	</form>
 	</c:if>
+	
 </body>
+
 </html>
