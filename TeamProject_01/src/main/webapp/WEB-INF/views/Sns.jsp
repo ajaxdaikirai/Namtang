@@ -117,16 +117,20 @@
     <div>
     
 <<<<<<< HEAD
-    qwe
-    asd
-    zxc
+    qwe222222222
+    asd222222222
+    zxc222222222
     
 =======
    	sinmingu
    	test
 >>>>>>> refs/remotes/origin/sinmingu
 
+<<<<<<< HEAD
 mingu
+=======
+testHuman
+>>>>>>> refs/remotes/origin/TestHuman
     </div>
 </body>
 </html>
