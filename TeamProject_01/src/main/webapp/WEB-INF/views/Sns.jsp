@@ -125,6 +125,8 @@
    	sinmingu
    	test
 >>>>>>> refs/remotes/origin/sinmingu
+
+mingu
     </div>
 </body>
 </html>
